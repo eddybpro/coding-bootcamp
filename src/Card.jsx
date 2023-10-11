@@ -12,7 +12,7 @@ function Card(props) {
             className="Card-ImgBox-BtnsBox-Prev"
             onClick={props.prevSlide}
             aria-label="previous"
-            id={props.name}
+            id={`${props.idx}`}
           >
             <img src={PrevIcon} alt="" />
           </button>
@@ -20,7 +20,7 @@ function Card(props) {
             className="Card-ImgBox-BtnsBox-Next"
             onClick={props.nextSlide}
             aria-label="next"
-            id={props.name}
+            id={props.idx}
           >
             <img src={NextIcon} alt="" />
           </button>
