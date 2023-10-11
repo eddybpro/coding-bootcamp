@@ -11,12 +11,16 @@ function Card(props) {
           <button
             className="Card-ImgBox-BtnsBox-Prev"
             onClick={props.prevSlide}
+            aria-label="previous"
+            id={props.name}
           >
             <img src={PrevIcon} alt="" />
           </button>
           <button
             className="Card-ImgBox-BtnsBox-Next"
             onClick={props.nextSlide}
+            aria-label="next"
+            id={props.name}
           >
             <img src={NextIcon} alt="" />
           </button>
