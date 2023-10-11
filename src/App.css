@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap");
+
+:root {
+  --color-brand-1: hsl(240, 38%, 20%);
+  --color-brand-2: hsl(240, 18%, 77%);
+
+  --font-inter: "Inter", sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--font-inter);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+main {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    background: url("./assets/pattern-curve.svg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 100% 18rem;
+  }
+}
